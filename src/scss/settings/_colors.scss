@@ -1,0 +1,22 @@
+/*
+* Vyaire Colors
+* Define colors in the $color map, and grab them using the function
+* i.e. background-color: color(yellow);
+*/
+
+$colors: (
+  white: #fff,
+  black: #000,
+  grey: #f6f6f6,
+  blue: #0268dc,
+  light-blue: #e1f1ff,
+  darker-blue: #2ea9e0
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn 'That color is not defined: \'#{$key}\'';
+}

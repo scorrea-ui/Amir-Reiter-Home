@@ -1,0 +1,11 @@
+/**
+ * Mixin Tools
+ *
+ */
+
+// Type size mixin - uses Iota-type tool to generate responsive heading styles
+@mixin type-size($t) {
+  @if map-has-key($type-sizes, $t) {
+    @include iota-type(map-get($type-sizes, "#{$t}"));
+  }
+}

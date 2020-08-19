@@ -1,0 +1,21 @@
+.c-heading {
+  &--l1 {
+    @include type-size(headingLevel1);
+
+    font-family: $open-sans;
+  }
+
+  &--l2 {
+    @include type-size(headingLevel2);
+
+    font-family: $open-sans;
+    font-weight: font-weight(bold);
+  }
+
+  &--l3 {
+    @include type-size(headingLevel3);
+
+    font-family: $open-sans;
+    font-weight: font-weight(standard);
+  }
+}

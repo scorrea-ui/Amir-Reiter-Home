@@ -1,0 +1,25 @@
+.c-section {
+  padding: 0 1.5rem;
+
+  @include iota-breakpoint(md) {
+    padding: 0;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include iota-breakpoint(md) {
+      justify-content: flex-start;
+    }
+
+    img {
+      margin: 0 1rem 0 0;
+    }
+  }
+}

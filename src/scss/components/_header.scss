@@ -1,0 +1,84 @@
+.c-header {
+  background: #fff;
+  filter: drop-shadow(0 0.3rem 0.6rem rgba(0, 0, 0, 0.16));
+  height: auto;
+  transition: all 1s ease-in;
+
+  &--fixed {
+    @include iota-breakpoint(md) {
+      height: auto;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+
+  &--active {
+    display: block;
+    height: auto;
+  }
+
+  &__logo {
+    @include iota-breakpoint(md) {
+      display: block;
+    }
+  }
+
+  &__list {
+    align-items: center;
+    background: color(white);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    list-style: none;
+    position: absolute;
+    width: 100%;
+
+    @include iota-breakpoint(md) {
+      flex-direction: row;
+      height: auto;
+      justify-content: initial;
+      position: initial;
+    }
+
+    li {
+      margin: 1rem;
+
+      @include iota-breakpoint(md) {
+        margin: 0 1rem;
+      }
+
+      a {
+        color: color(black);
+        font-family: $open-sans;
+        font-size: 1.6rem;
+        line-height: 1.38;
+        text-decoration: none;
+      }
+
+      &:last-child a {
+        color: color(white);
+      }
+    }
+  }
+}
+
+.span12.widget-span.widget-type-custom_widget.c-header {
+  @include iota-breakpoint(md) {
+    display: none;
+  }
+
+  &--fixed,
+  &--active {
+    display: block;
+    width: 100%;
+  }
+
+  &--active {
+    height: 100vh;
+  }
+}

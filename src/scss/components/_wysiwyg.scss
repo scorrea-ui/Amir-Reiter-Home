@@ -1,0 +1,18 @@
+.c-wysiwyg {
+  h2 {
+    color: color(blue);
+    font-family: "Open Sans", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.36;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    @include type-size(body);
+
+    font-family: $open-sans;
+    font-weight: font-weight(standard);
+    margin-bottom: 2rem;
+  }
+}

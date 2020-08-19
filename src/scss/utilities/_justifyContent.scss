@@ -1,0 +1,16 @@
+/*
+* Iota justify content utility classes
+* https://www.iotacss.com/docs/utilities/justify-content/
+*/
+
+$iota-utils-justify-content-namespace           : 'jc' !default;
+$iota-utils-justify-content-start-name           : 'start' !default;
+$iota-utils-justify-content-end-name             : 'end' !default;
+$iota-utils-justify-content-center-name         : 'center' !default;
+$iota-utils-justify-content-between-name        : 'between' !default;
+$iota-utils-justify-content-around-name         : 'around' !default;
+
+$iota-utils-justify-content-res                 : true !default;
+$iota-utils-justify-content-breakpoints         : $iota-global-breakpoints !default;
+
+@import 'node_modules/iotacss/utilities/justify-content';

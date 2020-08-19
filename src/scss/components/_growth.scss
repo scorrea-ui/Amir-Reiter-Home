@@ -1,0 +1,14 @@
+.c-growth {
+  background-color: #e1f1ff;
+  min-height: 80rem;
+
+  &__title {
+    color: color(blue);
+    font-family: $open-sans;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 30px;
+    margin-bottom: 5.5rem;
+    text-align: center;
+  }
+}

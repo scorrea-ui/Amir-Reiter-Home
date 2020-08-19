@@ -1,0 +1,67 @@
+.c-guide {
+  border-bottom: 0.2rem solid #0268dc;
+  padding-bottom: 7.5rem;
+  &:last-of-type {
+    border-bottom: 0;
+  }
+  &__title {
+    color: #0268dc;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+    margin-top: 9.22rem;
+    text-align: center;
+  }
+
+  &__block {
+    background: #fff;
+    filter: drop-shadow(0 0 35px rgba(128, 128, 128, 0.07));
+    margin: 0;
+    padding: 1.9rem 0 2.7rem;
+    text-align: center;
+  }
+
+  &__card {
+    margin: 3rem auto 0 auto;
+    max-width: 40rem;
+
+    @include iota-breakpoint(md) {
+      margin: initial;
+    }
+  }
+
+  &__content {
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  &__button {
+    background: linear-gradient(#f97e22 0%, #f3a233 100%);
+    border-radius: 1.5rem;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.05rem;
+    line-height: 1.4rem;
+    margin: 0.8rem auto 0 auto;
+    max-width: 13rem;
+    padding: 0.7rem 3rem;
+    text-decoration: none;
+
+    &:hover {
+      background: linear-gradient(#f3a233 0%, #f97e22 100%);
+      font-size: 1.2rem;
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: center;
+    margin: 2.5rem 0 10rem 0;
+  }
+}

@@ -1,0 +1,15 @@
+$weights: (
+  regular: 300,
+  standard: 400,
+  medium: 500,
+  bold: 700,
+  heavy: 900 // used for line-awesome
+);
+
+@function font-weight($key) {
+  @if map-has-key($weights, $key) {
+    @return map-get($weights, $key);
+  }
+
+  @warn 'That weight is not defined: \'#{$key}\'';
+}

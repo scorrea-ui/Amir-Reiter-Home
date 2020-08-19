@@ -1,0 +1,23 @@
+/**
+ * Background Image Utility
+ */
+
+%u-bgimg-contain-ctr {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+%u-bgimg-cover-ctr {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.u-bgimg-contain-ctr {
+  @extend %u-bgimg-contain-ctr;
+}
+
+.u-bgimg-cover-ctr {
+  @extend %u-bgimg-cover-ctr;
+}

@@ -1,0 +1,14 @@
+.c-footer {
+  align-items: center;
+  background-color: color(light-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__group {
+    display: flex;
+    img {
+      margin-right: 1.2rem;
+    }
+  }
+}

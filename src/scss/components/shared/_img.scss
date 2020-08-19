@@ -1,0 +1,28 @@
+.c-img {
+  margin: 2rem auto;
+
+  @include iota-breakpoint(md) {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  &--bg {
+    min-height: 45rem;
+  }
+
+  &--small {
+    max-width: 16rem;
+
+    @include iota-breakpoint(md) {
+      max-width: 100%;
+    }
+  }
+
+  &--huge {
+    max-width: 60%;
+
+    @include iota-breakpoint(md) {
+      max-width: 75%;
+    }
+  }
+}

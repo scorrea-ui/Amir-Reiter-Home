@@ -1,0 +1,46 @@
+/**
+ * Type Component
+ */
+
+.c-type {
+  &--link {
+    @include type-size(primary-navigation);
+
+    font-family: $open-sans;
+    font-weight: font-weight(bold);
+    &:hover {
+      @include type-size(primary-navigation);
+    }
+  }
+
+  &--secondary-link {
+    @include type-size(sub-navigation);
+
+    font-family: $open-sans;
+    font-weight: font-weight(bold);
+    &:hover {
+      @include type-size(sub-navigation);
+    }
+  }
+
+  &--small {
+    @include type-size(small);
+
+    font-family: $open-sans;
+    font-weight: font-weight(standard);
+  }
+
+  &--card {
+    @include type-size(card);
+
+    font-family: $open-sans;
+    font-weight: font-weight(standard);
+  }
+
+  &--body {
+    @include type-size(body);
+
+    font-family: $open-sans;
+    font-weight: font-weight(standard);
+  }
+}

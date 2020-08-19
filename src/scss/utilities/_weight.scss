@@ -1,0 +1,11 @@
+$iota-utils-weight-namespace: "weight-" !default;
+
+$iota-utils-weight-sizes: (
+  regular: 300,
+  standard: 400,
+  medium: 500,
+  bold: 700,
+  heavy: 900
+);
+
+@import "node_modules/iotacss/utilities/weight";

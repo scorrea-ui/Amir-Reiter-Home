@@ -1,0 +1,39 @@
+.c-team {
+  &__card {
+    background-color: color(white);
+    border-radius: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    min-height: 40rem;
+    position: relative;
+
+    @include iota-breakpoint(sm) {
+      margin: 0 auto;
+      max-width: 33.3rem;
+    }
+
+    &_img {
+      background-color: #0268dc;
+      border-radius: 50%;
+      left: 50%;
+      position: absolute;
+      top: -4rem;
+      transform: translateX(-50%);
+    }
+
+    &_title {
+      min-height: 6.5rem;
+    }
+
+    &_body {
+      @include type-size(body);
+    }
+
+    &--mediumCard {
+      min-height: 34rem;
+    }
+  }
+
+  &__smallCard {
+    min-height: 28.2rem;
+  }
+}

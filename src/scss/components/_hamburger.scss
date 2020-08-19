@@ -1,0 +1,24 @@
+.c-hamburger {
+  align-items: flex-end;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  width: 50%;
+
+  @include iota-breakpoint(md) {
+    display: none;
+    width: auto;
+  }
+  &__line {
+    background-color: color(black);
+    height: 0.3rem;
+    margin: 0.2rem 0;
+    transition: 0.4s;
+    width: 2.5rem;
+
+    @include iota-breakpoint(md) {
+      margin: 0.3rem 0;
+    }
+  }
+}
